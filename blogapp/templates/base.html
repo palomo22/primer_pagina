@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Te Recomiendo un libro{% endblock %}</title>
+</head>
+<body>
+    <h1>Mis autores favoritos</h1>
+    <nav>
+        <a href="{% url 'index' %}">Inicio</a> |
+        <a href="{% url 'nuevo_autor' %}">Nuevo Autor</a> |
+        <a href="{% url 'nueva_categoria' %}">Nueva Categoría</a> |
+        <a href="{% url 'nuevo_libro' %}">Nuevo Libro</a> |
+        <a href="{% url 'buscar_libro' %}">Buscar Libro</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
